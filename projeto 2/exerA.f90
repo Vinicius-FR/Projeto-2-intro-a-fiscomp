@@ -81,4 +81,16 @@ do i = 1, n
 end do
 
 close(2)
+
+print*, 'Baseando-se no valor de h que gera o menor desvio, tesm que os valores mais apropriados para cada caso são:'
+print*, 'Derivada simétrica de 3 pontos: h = 0,000001 (12° valor)'
+print*, 'Derivada para frente de 2 pontos: h = 0,00000001 (14° valor)'
+print*, 'Derivada para trás de 2 pontos: h = 0,00000001 (14° valor)'
+print*, 'Derivada segunda simétrica de 3 pontos: h = 0,00005 (10° valor)'
+print*, 'Derivada segunda simétrica de 5 pontos: h = 0,0005 (8° valor)'
+print*, 'Derivada terceira anti-simétrica de 5 pontos: h = 0,0005 (8° valor)'
+print*, 'Por fim, nota-se que, conforme aumenta a ordem da derivada e o número de pontos, aumenta a relevância ',&
+        'do erro computacional inerente, tornando-o cada vez mais significativo cada vez que h se aproxima da ',&
+        'ordem de grandeza da precisão. Portanto nem sempre o menor h é o mais adequado.'
+
 end program
